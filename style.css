@@ -1,0 +1,88 @@
+/* MAIN THEMES */
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background: #000; /* pure black */
+    color: white;
+}
+
+/* ENTER SCREEN */
+.enter-box {
+    width: 90%;
+    max-width: 350px;
+    margin: 120px auto;
+    text-align: center;
+    background: rgba(173, 216, 230, 0.1); /* light blue transparent */
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #87CEEB;
+    backdrop-filter: blur(8px);
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #ffb6c1; /* baby pink */
+}
+
+input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    background: #87CEEB; /* light blue */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffb6c1; /* baby pink */
+}
+
+#msg {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffb6c1;
+}
+
+/* BIRTHDAY PAGE */
+.birthday-bg {
+    background: linear-gradient(135deg, #000, #001f3f);
+}
+
+.decorations {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.hb-title {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 40px;
+    color: #87CEEB;
+}
+
+.hb-title .pink {
+    color: #ffb6c1;
+}
+
+.note-box {
+    width: 85%;
+    max-width: 400px;
+    margin: 30px auto;
+    background: rgba(255, 182, 193, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ffb6c1;
+    backdrop-filter: blur(6px);
+}
