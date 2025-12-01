@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Princess</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #000000, #6ec9ff, #ffb3d9);
+      animation: bg 10s infinite alternate;
+      color: white;
+    }
+
+    @keyframes bg {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    .box {
+      text-align: center;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(255, 182, 255, 0.5);
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #ff93d0;
+      color: black;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      background: #6ec9ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>Enter Your Name 💗</h2>
+    <input id="nameInput" type="text" placeholder="Type here..." />
+    <button onclick="checkName()">Continue</button>
+  </div>
+
+  <script>
+    function checkName() {
+      let name = document.getElementById("nameInput").value.trim().toLowerCase();
+
+      if (name === "miss mature") {
+        window.location.href = "birthday.html";
+      } else {
+        alert("Access Denied ❌");
+      }
+    }
+  </script>
+</body>
+</html>
